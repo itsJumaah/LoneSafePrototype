@@ -13,7 +13,7 @@ public class Login extends AppCompatActivity {
 
 
     void newFunc() {
-        System.out.print("hello");
+
     }
 }
 
