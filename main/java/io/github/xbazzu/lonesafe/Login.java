@@ -12,8 +12,6 @@ public class Login extends AppCompatActivity {
     }
 
 
-    void newFunc() {
 
-    }
 }
 
