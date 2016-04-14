@@ -25,6 +25,21 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.16">
 
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ?"
+                android:id="@+id/Infobutton"
+                android:onClick="showAlert"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="262dp"
+                android:layout_marginStart="262dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right" />
+
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,4 +93,6 @@
         <!---vjhjkh -->
 
     </LinearLayout>
+
+
 </RelativeLayout>
