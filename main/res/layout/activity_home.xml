@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.github.xbazzu.lonesafe.Home">
+    tools:context="io.github.xbazzu.lonesafe.Home"
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="wrap_content"
@@ -92,5 +93,68 @@
         android:layout_alignLeft="@+id/StatusHere"
         android:layout_alignStart="@+id/StatusHere"
         android:textColor="#151414" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hrsBar"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8am"
+        android:id="@+id/hrsFrom"
+        android:layout_above="@+id/hrsBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10am"
+        android:id="@+id/hrsTo"
+        android:layout_alignTop="@+id/hrsFrom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m OK"
+        android:id="@+id/imok"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_toRightOf="@+id/RLHere"
+        android:layout_toEndOf="@+id/RLHere"
+        android:textColor="#228d0d" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:layout_below="@+id/imok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS"
+        android:id="@+id/sos"
+        android:background="#990202"
+        android:textColor="#eeeeee"
+        android:enabled="false"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imok"
+        android:layout_alignStart="@+id/imok" />
 
 </RelativeLayout>
