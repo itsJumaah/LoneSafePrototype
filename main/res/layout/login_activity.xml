@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.16">
+            android:layout_weight="0.05">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -64,8 +64,17 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_weight="0.05">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incorrect Login! Try Again"
+                android:id="@+id/WrongLogin"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#bb2424"
+                android:visibility="invisible"
+                android:textStyle="bold" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -134,8 +143,6 @@
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
-
-        <!---vjhjkh -->
 
     </LinearLayout>
 

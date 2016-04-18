@@ -35,4 +35,62 @@
         android:layout_below="@+id/et_username"
         android:layout_toRightOf="@+id/et_username"
         android:layout_toEndOf="@+id/et_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:id="@+id/StatusLabel"
+        android:layout_below="@+id/et_username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risk Level:"
+        android:id="@+id/RiskLvlLabel"
+        android:layout_below="@+id/et_level_of_risk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On field hours:"
+        android:id="@+id/HoursLabel"
+        android:layout_below="@+id/et_level_of_risk"
+        android:layout_toRightOf="@+id/et_level_of_risk"
+        android:layout_toEndOf="@+id/et_level_of_risk"
+        android:layout_marginTop="33dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/HoursLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFLINE"
+        android:id="@+id/StatusHere"
+        android:textColor="#b31515"
+        android:layout_alignTop="@+id/StatusLabel"
+        android:layout_toRightOf="@+id/HoursLabel"
+        android:layout_toEndOf="@+id/HoursLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High"
+        android:id="@+id/RLHere"
+        android:layout_alignTop="@+id/RiskLvlLabel"
+        android:layout_alignLeft="@+id/StatusHere"
+        android:layout_alignStart="@+id/StatusHere"
+        android:textColor="#151414" />
+
 </RelativeLayout>

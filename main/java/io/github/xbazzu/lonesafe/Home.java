@@ -19,17 +19,17 @@ public class Home extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String name     = intent.getStringExtra("name");
-        String username = intent.getStringExtra("username");
-        int level_of_risk = intent.getIntExtra("level_of_risk", 5); //5 is default value
+       // String name     = intent.getStringExtra("user");
+        //String username = "user";
+        //int level_of_risk = intent.getIntExtra("level_of_risk", 5); //5 is default value
 
-        String welcome = "Hello " + name;
-        String logged  = "You are logged in as " + username;
-        String lvl     = "You're risk of level is " + level_of_risk;
+       // String welcome = "Welcome " + "Ash";
+       // String logged  = "You are logged in as " + "user";
+       // String lvl     = "You're risk of level is " + level_of_risk;
 
-        et_name.setText(welcome);
-        et_username.setText(logged);
-        et_level_of_risk.setText(lvl);
+       // et_name.setText(welcome);
+       // et_username.setText(logged);
+       // et_level_of_risk.setText(lvl);
 
     }
 }
