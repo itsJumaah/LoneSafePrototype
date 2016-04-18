@@ -86,11 +86,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="High"
+        android:text="5"
         android:id="@+id/RLHere"
         android:layout_alignTop="@+id/RiskLvlLabel"
         android:layout_alignLeft="@+id/StatusHere"
         android:layout_alignStart="@+id/StatusHere"
         android:textColor="#151414" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Check-in  "
+        android:id="@+id/CheckinButton"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    S.O.S    "
+        android:onClick="showSOSAlert"
+        android:id="@+id/SosButton"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:layout_alignRight="@+id/SettingsButton"
+        android:layout_alignEnd="@+id/SettingsButton"
+        android:layout_alignLeft="@+id/SettingsButton"
+        android:layout_alignStart="@+id/SettingsButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:onClick="GoToSettings"
+        android:id="@+id/SettingsButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/CheckinButton"
+        android:layout_alignLeft="@+id/CheckinButton"
+        android:layout_alignStart="@+id/CheckinButton"
+        android:layout_alignRight="@+id/CheckinButton"
+        android:layout_alignEnd="@+id/CheckinButton" />
 
 </RelativeLayout>

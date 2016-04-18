@@ -19,4 +19,26 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level of Risk:"
+        android:id="@+id/RLSetLabel"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/SettingTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RLSetter"
+        android:spinnerMode="dropdown"
+        android:layout_alignBaseline="@+id/RLSetLabel"
+        android:layout_alignBottom="@+id/RLSetLabel"
+        android:layout_toRightOf="@+id/RLSetLabel"
+        android:layout_toEndOf="@+id/RLSetLabel" />
+
+
 </RelativeLayout>
