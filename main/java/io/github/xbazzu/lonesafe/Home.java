@@ -30,5 +30,8 @@ public class Home extends AppCompatActivity {
         et_name.setText(welcome);
         et_username.setText(logged);
         et_level_of_risk.setText(lvl);
+
+        //this is toby coding test
+        //okay
     }
 }
