@@ -16,6 +16,7 @@ public class Home extends AppCompatActivity {
         final TextView et_name          = (TextView) findViewById(R.id.et_name);
         final TextView et_username      = (TextView) findViewById(R.id.et_username);
         final TextView et_level_of_risk = (TextView) findViewById(R.id.et_level_of_risk);
+        //final Button et_remember_me     = (TextView) findViewById(R.id.et_remember_me);
 
         Intent intent = getIntent();
 

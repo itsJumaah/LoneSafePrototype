@@ -131,8 +131,9 @@
         android:layout_marginTop="54dp"
         android:layout_below="@+id/progressBar"
         android:layout_toRightOf="@+id/RLHere"
-        android:layout_toEndOf="@+id/RLHere"
-        android:textColor="#228d0d" />
+        android:textColor="#228d0d"
+        android:layout_alignRight="@+id/settings"
+        android:layout_alignEnd="@+id/settings" />
 
     <Button
         android:layout_width="wrap_content"

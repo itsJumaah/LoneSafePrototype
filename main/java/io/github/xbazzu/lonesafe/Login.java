@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.CheckBox;
 
 /*
 import com.android.volley.RequestQueue;
@@ -46,6 +47,7 @@ public class Login extends AppCompatActivity {
         final EditText et_password = (EditText) findViewById(R.id.et_password);
         final Button   et_login    = (Button)   findViewById(R.id.signIn);
         final TextView et_tc       = (TextView) findViewById(R.id.et_tc);
+        final Button et_rememberMe = (Button) findViewById(R.id.rememberMe);
 
 
 
@@ -63,12 +65,18 @@ public class Login extends AppCompatActivity {
         });
 
 
+
+
+
+
+
+
         assert et_login != null;
         et_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(et_username.getText().toString().equals("johndoe") && et_password.getText().toString().equals("pass")){
+                if(et_username.getText().toString().equals("johndoe") && et_password.getText().toString().equals("pass") ){
 
                         //if the login correct
 
@@ -93,6 +101,24 @@ public class Login extends AppCompatActivity {
 
                 }
             }
+
+            public void onCheckBoxClicked(View v) {
+                boolean checked = ((CheckBox) v).isChecked();
+
+                switch (v.getId()) {
+                    case R.id.rememberMe:
+                        if (checked) et_username.setText("hello");
+                }
+            }
+
+
+
+
+
+
+
+
+
 
 
                 /*
