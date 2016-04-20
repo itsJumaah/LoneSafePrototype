@@ -107,7 +107,7 @@ public class Login extends AppCompatActivity {
 
                 switch (v.getId()) {
                     case R.id.rememberMe:
-                        if (checked) et_username.setText("hello");
+                        if (checked) ((EditText) findViewById(R.id.et_username)).setText("bitch");
                 }
             }
 
