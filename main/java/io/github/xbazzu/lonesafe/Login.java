@@ -102,6 +102,7 @@ public class Login extends AppCompatActivity {
                 }
             }
 
+
             public void onCheckBoxClicked(View v) {
                 boolean checked = ((CheckBox) v).isChecked();
 
@@ -110,7 +111,6 @@ public class Login extends AppCompatActivity {
                         if (checked) ((EditText) findViewById(R.id.et_username)).setText("bitch");
                 }
             }
-
 
 
 
